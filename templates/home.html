@@ -7,7 +7,17 @@
 {% block content %}
 
     {% if user.is_authenticated %}
-        <h1>AUTENTICADO</h1>   
+        <form action=""> <!-- FORMULÁRIO -->
+            <h1 class="title-login">Análise Rápida</h1>
+            <div> <!--CAMPO 1 DE EMAIL -->
+                <div>
+                <input class="form-control" placeholder="Upload de Arquivo" type="file" id="arquivo">
+                </div>
+            </div>
+            <br>
+        </form>
+
+        <a class="btn btn-primary" style="margin: 0 30px; width: 170px">Analisar</a>
             
     {% else %}
     <br>
